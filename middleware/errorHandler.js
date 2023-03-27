@@ -44,7 +44,7 @@ const errorHandler = (err, req, res, next) => {
     case 404:
       console.log("NOT FOUND");
       res.json({
-        title: "SERVER_ERROR",
+        title: "Not found",
         message: err.message,
         stackTrace: err.stack,
       });
