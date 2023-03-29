@@ -84,7 +84,7 @@ const loginUser = asyncHandler(async (req, res) => {
 
 //@des get current user
 //@route get /api/user/current
-//@access public
+//@access private
 
 const currentUser = asyncHandler(async (req, res) => {
   res.json({ message: "Currecnt user info" });
