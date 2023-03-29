@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 5000;
 app.use(experss.json());
 
 app.use("/api/contacts", require("./routes/contactRoute"));
+app.use("/api/users", require("./routes/userRoute"));
 
 app.use(errorHandler);
 
