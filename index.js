@@ -11,9 +11,12 @@ app.use(experss.json());
 
 app.use("/api/contacts", require("./routes/contactRoute"));
 app.use("/api/users", require("./routes/userRoute"));
+app.get("/", (req, res) => {
+  res.send("Hello, user");
+});
 
 app.use(errorHandler);
 
 app.listen(PORT, () => {
-  console.log(`Express.js is running on https://localhost:${PORT}`);
+  console.log(`Express.js is running on http://localhost:${PORT}`);
 });
